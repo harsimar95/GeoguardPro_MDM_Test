@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Omapp</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="map_api_key">AIzaSyCo5THbGPGfQLPTaBt17yS5dYZ4iTZkuGU</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_maps1">Map</string>
+    <string name="contactus">
+  <![CDATA[
+    <b> Mansa Infotech</b><br/>
+    <b></b> Plot No D-174, Phase VIII-B, Industrial area, Sahibzada Ajit Singh Nagar, Chandigarh 160071<br/>
+    <b></b> deepakmishra@mansainfotech.com<br/>
+  ]]>
+</string>
+     <string name="aboputus">
+  <![CDATA[
+    <h>OMAPP Location tracker enables you to keep in touch with your friends and family.It creates a user-friendly system where people can see each other\'s current location. All-in-all, it helps you know where your close people are at any time. </h><br/>
+<br/><b>How to use:</b><br/>
+<h>Tracking has now become easier, fast, and accurate. At first, make sure the person you want to track is an Android user and this app is installed on his/her device.</h><br/>
+<br/>
+<h>Now, all you need to do is sign up through an easy signup (consisting of name, contact number), start tracking locations using an icon situated at the bottom right corner of the Homepage, & tapping on the connection list to quickly navigate to a friend\'s list. You can also tap on the marker on the map to see who it belongs to.</h><br/>
+<br/><b>Note: </b><h>Accuracy of detecting location can vary depending on whether GPS, Wi-Fi, or Mobile Data is ON...</h>
+<br/>
+<br/>
+<b>Key features of Omapp:</b><br/>
+<h>- It tracks location in real time.<br/>
+- Automatically creates the contacts list based on your Phone\'s contact list<br/>
+- It has intuitive interface.  <br/>
+- Omapp is secure. It includes built-in privacy controls for all users (who all can connect with you).<br/>
+- While tracking other persons, It helps you to find out how far they are located from you.<br/>
+- Also, it\'s completely free to download!</h><br/>
+<h>OMAPP is simply the best locator app for your Android device. So, start tracking your loved ones in just one tap.</h><br/>
+  ]]>
+</string>
+</resources>

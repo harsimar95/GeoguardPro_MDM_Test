@@ -1,0 +1,7 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Terminal=false
+Icon=someicon
+Exec=sh /home/dev24/Downloads/android-studio/bin/studio.sh
+Name=Android Studio

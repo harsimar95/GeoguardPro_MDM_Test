@@ -1,0 +1,55 @@
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    tools:context="try_run.gagan.shah.location_proto.Common">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="440dp"
+        map:cameraZoom="15"
+        map:mapType="normal"
+        map:liteMode="true"
+        />
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="80sp"
+        android:padding="4dp"
+        android:elevation="8dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="120sp"
+            android:layout_height="70sp"
+            android:src="@drawable/add"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:text="Add persons"
+            android:textSize="25dp"
+            android:gravity="center_vertical"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:elevation="8dp"
+        android:background="#f5f5f5"
+        android:layout_width="match_parent"
+        android:layout_height="300sp">
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/char4"
+            />
+    </LinearLayout>
+</LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

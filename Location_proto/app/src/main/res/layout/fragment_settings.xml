@@ -1,0 +1,159 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#444444"
+    tools:context="try_run.gagan.shah.location_proto.Settings">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="7"
+    android:paddingLeft="15dp"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="28dp"
+        android:textColor="#f5f5f5"
+        android:gravity="center_vertical"
+        android:text="Settings" />
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        >
+
+
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view3"
+            android:layout_gravity="center"
+            android:elevation="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            card_view:cardCornerRadius="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="1.62"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#4b4949"
+                        android:text="Share tracking with :"
+                        android:padding="5dp"
+                        android:textSize="17dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="1.1"
+                    android:layout_height="match_parent">
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/rg"
+                        android:layout_gravity="center">
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:padding="14dp"
+                            android:layout_height="wrap_content"
+                            android:text="Everyone"
+                            android:textSize="18dp"
+                            android:id="@+id/radioButton"
+                            android:layout_gravity="center_horizontal" />
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="14dp"
+                            android:text="No one"
+                            android:textSize="18dp"
+                            android:id="@+id/radioButton1"
+                            android:layout_gravity="center_horizontal" />
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="14dp"
+                            android:textSize="18dp"
+                            android:text="My contacts"
+                            android:id="@+id/radioButton2"
+                            android:layout_gravity="center_horizontal" />
+                    </RadioGroup>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/settinglist"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:gravity="right"
+                        android:textColor="#4b4949"
+                        android:id="@+id/selectall"
+                        android:layout_marginRight="10dp"
+                        android:layout_height="wrap_content"
+                        android:text="Deselect all"/>
+                    <ListView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/listViewsetting"
+                        android:layout_gravity="center_horizontal" />
+
+                </LinearLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:orientation="vertical"
+                    >
+                    <ProgressBar
+                        style="?android:attr/progressBarStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerInParent="true"
+                        android:id="@+id/progressBar8" />
+                    <ProgressBar
+                        style="?android:attr/progressBarStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/progressBar9"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerInParent="true" />
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/card_view6"
+                        android:elevation="10dp"
+                        android:layout_width="320sp"
+                        android:layout_centerInParent="true"
+                        android:layout_height="35sp"
+                        card_view:cardCornerRadius="10dp">
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_height="match_parent"
+                            android:background="#00b300"
+                            android:textColor="#f5f5f5"
+                            android:id="@+id/btsave"
+                            android:text="Save"/>
+                    </android.support.v7.widget.CardView>
+                </RelativeLayout>
+            </LinearLayout>
+
+
+
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+</LinearLayout>

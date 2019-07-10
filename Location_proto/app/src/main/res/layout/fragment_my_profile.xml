@@ -1,0 +1,253 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#444444"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:id="@+id/myprofile"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="try_run.gagan.shah.location_proto.My_profile">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:padding="3dp"
+        android:elevation="10dp"
+        android:orientation="vertical"
+        android:layout_weight="1.7"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:background="#2a2a2a"
+            android:layout_weight="1.8"
+            android:gravity="center"
+            android:layout_height="match_parent">
+            <View
+                android:layout_width="100dp"
+                android:background="@drawable/ring"
+                android:layout_centerInParent="true"
+                android:layout_height="100dp"
+               >
+
+            </View>
+            <RelativeLayout
+                android:layout_width="105sp"
+                android:gravity="center"
+                android:padding="7sp"
+                android:layout_centerInParent="true"
+                android:layout_height="105sp"
+                >
+
+                <try_run.gagan.shah.location_proto.CircleView
+                    android:layout_width="105sp"
+                    android:layout_height="105sp"
+                    android:src="@drawable/backon1"
+                    android:id="@+id/circleView"
+                    />
+
+                <TextView
+                    android:layout_width="105sp"
+                    android:layout_height="105sp"
+                    android:id="@+id/textic"
+                    android:gravity="center"
+                    android:textColor="#f5f5f5"
+                    android:textSize="60dp"/>
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:background="#2a2a2a"
+            android:layout_weight="2.5"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/namemy"
+                android:textColor="#f5f5f5"
+                android:gravity="center"
+                android:text="Madhur Sharma"
+                android:textSize="17dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true" />
+            <TextView
+                android:layout_marginTop="2sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvmobile"
+                android:textSize="12dp"
+                android:text="Phone : +919034342992"
+                android:textColor="#f5f5f5"
+                android:gravity="center"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true" />
+            <TextView
+                android:layout_marginTop="1sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/address"
+                android:lines="2"
+                android:textColor="#f5f5f5"
+                android:textSize="12dp"
+                android:gravity="center"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true" />
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view"
+            android:layout_gravity="center"
+            android:elevation="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            card_view:cardCornerRadius="10dp">
+
+            <LinearLayout
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:elevation="8dp"
+                android:background="#f5f5f5"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#4b4949"
+                    android:text="Edit Info:"
+                    android:textSize="15dp"/>
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:textColor="#323232"
+                        android:text=" Name : "
+                        android:textSize="17dp"/>
+                    <EditText
+                        android:textSize="17dp"
+                        android:backgroundTint="#323232"
+                        android:id="@+id/etname"
+                        android:textColorHint="#323232"
+                        android:textColor="#323232"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    >
+                    <RelativeLayout
+                        android:layout_weight="1.8"
+                        android:id="@+id/addresslayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:id="@+id/l"
+                            android:text=" Location : "
+                            android:textColor="#323232"
+                            android:textSize="17dp"/>
+                        <EditText
+                            android:layout_toRightOf="@+id/l"
+                            android:gravity="center_vertical"
+                            android:textSize="16dp"
+                            android:editable="false"
+                            android:textColor="#323232"
+                            android:backgroundTint="#323232"
+                            android:textColorHint="#323232"
+                            android:id="@+id/etlocation"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+
+                        <ProgressBar
+                            style="?android:attr/progressBarStyleSmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/progressBar5"
+                            android:layout_centerVertical="true"
+                            android:layout_alignEnd="@+id/etlocation" />
+
+                    </RelativeLayout>
+                    <LinearLayout
+                        android:layout_weight="1.4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        >
+                        <ProgressBar
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/progressBar4"
+                            android:layout_gravity="center_horizontal" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_weight="1.5"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        >
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/card_view6"
+                            android:layout_gravity="center"
+                            android:elevation="10dp"
+                            android:layout_width="320sp"
+                            android:layout_height="35sp"
+                            card_view:cardCornerRadius="10dp">
+                            <Button
+                                android:layout_width="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_height="match_parent"
+                                android:background="#00b300"
+                                android:textColor="#f5f5f5"
+                                android:id="@+id/btsave"
+                                android:text="Update"/>
+                        </android.support.v7.widget.CardView>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+<android.support.design.widget.CoordinatorLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/layout">
+
+</android.support.design.widget.CoordinatorLayout>
+
+</LinearLayout>

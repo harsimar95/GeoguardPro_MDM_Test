@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+        <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+                <!-- Customize your theme here. -->
+                <item name="colorPrimary">@color/colorPrimary</item>
+                <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+                <item name="colorAccent">@color/cast_libraries_material_featurehighlight_outer_highlight_default_color</item>
+                <item name="android:textColorPrimary">@color/wallet_hint_foreground_holo_light</item>
+                <item name="android:statusBarColor">
+                        @color/bright_foreground_disabled_material_light
+                </item>
+                <item name="android:colorForeground">
+                        @color/common_google_signin_btn_text_dark_default
+                </item>
+        </style>
+</resources>

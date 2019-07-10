@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base application theme is the default theme. -->
+    <style name="Theme" parent="android:style/Theme" />
+
+    <style name="Theme.MyAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/splash</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/cast_libraries_material_featurehighlight_outer_highlight_default_color</item>
+        <item name="android:textColorPrimary">@color/wallet_hint_foreground_holo_light</item>
+        <item name="android:colorBackground">@color/material_grey_100</item>
+
+    </style>
+</resources>

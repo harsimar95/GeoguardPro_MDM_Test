@@ -1,0 +1,22 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/cast_libraries_material_featurehighlight_outer_highlight_default_color</item>
+        <item name="android:textColorPrimary">@color/wallet_hint_foreground_holo_light</item>
+        <item name="android:colorForeground">@color/common_google_signin_btn_text_dark_default
+        </item>
+
+    </style>
+        <style name="AlertDialogCustom" parent="Theme.AppCompat.Light.NoActionBar">
+            <item name="android:windowBackground">@color/blue</item>
+            <item name="android:windowContentOverlay">@color/blue</item>
+            <item name="android:windowMinWidthMajor">@android:dimen/dialog_min_width_major</item>
+            <item name="android:windowMinWidthMinor">@android:dimen/dialog_min_width_minor</item>
+            <item name="android:windowIsFloating">true</item>
+        </style>
+
+</resources>

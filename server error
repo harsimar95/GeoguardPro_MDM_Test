@@ -1,0 +1,18 @@
+Trace: { Error: Request has timed out
+    at /home/ubuntu/servers/video/node_modules/kurento-client/lib/KurentoClient.js:362:24
+    at dispatchCallback (/home/ubuntu/servers/video/node_modules/kurento-jsonrpc/lib/index.js:613:9)
+    at Timeout.timeout (/home/ubuntu/servers/video/node_modules/kurento-jsonrpc/lib/index.js:661:9)
+    at tryOnTimeout (timers.js:224:11)
+    at Timer.listOnTimeout (timers.js:198:5)
+  request: '{"jsonrpc":"2.0","method":"release","params":{"object":"41eb8a1f-d9f3-44b2-b0d6-6d914efd20ae_kurento.MediaPipeline/6213d21b-93cd-45a1-ab28-f0813b222eb4_kurento.WebRtcEndpoint","sessionId":"6e464831-16eb-4cd6-ad7b-6c7819da71e3"},"id":21713}',
+  retry: [Function: retry] }
+    at WebRtcEndpoint.noop (/home/ubuntu/servers/video/node_modules/kurento-client-core/lib/abstracts/MediaObject.js:39:22)
+    at callback2 (/home/ubuntu/servers/video/node_modules/promisecallback/index.js:27:25)
+    at lib$es6$promise$$internal$$tryCatch (/home/ubuntu/servers/video/node_modules/es6-promise/dist/es6-promise.js:362:16)
+    at lib$es6$promise$$internal$$invokeCallback (/home/ubuntu/servers/video/node_modules/es6-promise/dist/es6-promise.js:374:17)
+    at lib$es6$promise$$internal$$publish (/home/ubuntu/servers/video/node_modules/es6-promise/dist/es6-promise.js:345:11)
+    at lib$es6$promise$$internal$$publishRejection (/home/ubuntu/servers/video/node_modules/es6-promise/dist/es6-promise.js:295:7)
+    at lib$es6$promise$asap$$flush (/home/ubuntu/servers/video/node_modules/es6-promise/dist/es6-promise.js:119:9)
+    at _combinedTickCallback (internal/process/next_tick.js:67:7)
+    at process._tickDomainCallback (internal/process/next_tick.js:122:9)
+

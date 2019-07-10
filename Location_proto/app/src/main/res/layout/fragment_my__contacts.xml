@@ -1,0 +1,25 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="5sp"
+    android:background="#f5f5f5"
+    android:paddingRight="5sp"
+    tools:context="try_run.gagan.shah.location_proto.My_Contacts">
+
+    <ListView
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:id="@+id/mylist"
+        android:dividerHeight="1dp"
+        android:divider="#e9e9e9"
+        android:layout_height="match_parent"
+        />
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar2"
+        android:layout_gravity="center" />
+
+</FrameLayout>

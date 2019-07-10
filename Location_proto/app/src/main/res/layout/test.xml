@@ -1,0 +1,144 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/myscroll"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        >
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/mapview"
+            android:clickable="true"
+            android:saveEnabled="true"
+            android:apiKey="@string/map_api_key"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="20dp"
+            android:src="@drawable/llogo"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/testi"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true" />
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/eye"
+            android:layout_marginRight="5dp"
+            android:id="@+id/tilt"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/myliner"
+        android:layout_weight="7"
+        android:layout_height="match_parent"
+        android:background="#f5f5f5"
+        android:weightSum="5"
+        android:elevation="10dp"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_weight="1.9">
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card"
+                android:layout_gravity="center"
+                android:layout_width="60dp"
+                android:elevation="8dp"
+                android:layout_height="60dp"
+                card_view:cardCornerRadius="30dp">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/mycon"
+                    android:id="@+id/circle" />
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_marginBottom="5dp"
+                android:text="My Contacts"
+                android:textSize="25dp"
+                android:textColor="#6e6e6e"
+                android:gravity="center_vertical"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_weight="2.1"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ref"
+                android:id="@+id/refrash"
+                android:padding="10dp"/>
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/progressBar6"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_marginTop="5dp"
+        android:elevation="8dp"
+        android:layout_weight="8"
+        android:id="@+id/myll"
+        android:orientation="vertical"
+        android:background="#f5f5f5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:background="#f5f5f5"
+            android:layout_width="match_parent"
+            android:id="@+id/swipeContainer"
+            android:layout_height="match_parent">
+            <ListView
+                android:layout_width="match_parent"
+                android:id="@+id/mylist"
+                android:dividerHeight="1dp"
+                android:divider="#e9e9e9"
+                android:layout_height="match_parent"
+                />
+
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBar2"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

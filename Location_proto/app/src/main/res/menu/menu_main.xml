@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="try_run.gagan.shah.expnav.MainActivity">
+    <item
+        android:id="@+id/action_Add"
+        android:icon="@drawable/home"
+        android:textSize="15sp"
+        app:showAsAction="always"
+        />
+</menu>
